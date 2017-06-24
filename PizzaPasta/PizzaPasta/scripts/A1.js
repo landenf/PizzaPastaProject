@@ -9,7 +9,8 @@ var Peperoni = false;
 var Mushrooms = false;
 var Broccoli = false;
 function createPizza() {
-    if (meatballs, TomatoSause, AlfredoSause) {
+    //if (meatballs, TomatoSause, AlfredoSause) {
+    if (AlfredoSause) {
     }
 }
 function buyMeatBalls() {
@@ -154,3 +155,4 @@ function getaddress() {
     addressf(address);
 }
 //# sourceMappingURL=pasta.js.map 
+//# sourceMappingURL=A1.js.map
