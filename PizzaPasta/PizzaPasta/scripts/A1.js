@@ -154,3 +154,4 @@ function getaddress() {
     addressf(address);
 }
 //# sourceMappingURL=pasta.js.map 
+//# sourceMappingURL=A1.js.map
