@@ -28,6 +28,5 @@ C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\bin\Micr
 C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\bin\Microsoft.AI.WindowsServer.xml
 C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\bin\Microsoft.ApplicationInsights.xml
 C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\obj\Debug\PizzaPasta.csprojResolveAssemblyReference.cache
 C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\obj\Debug\PizzaPasta.dll
 C:\MastersWeb\PizzaPastaProject\PizzaPastaProject\PizzaPasta\PizzaPasta\obj\Debug\PizzaPasta.pdb

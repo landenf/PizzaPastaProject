@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../scripts/Css.css" rel="stylesheet" type="text/css" />
+    <link href="css/Css.css" rel="stylesheet" />
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        body {
+            background-image: url('../Images/italian-pasta-wallpaper-mobile.jpg');
+        }
+    </style>
+    <script src="../scripts/pasta.js"></script>
+</head>
+<body>
+
+    <center>  <p>You have $10.00 to spend!<br />A pasta costs $5.00, so you have $5.00 to spend on toppings.</p></center>
+    <center><h3 id="MoneyLeft"></h3></center>
+
+    <table>
+        <tr>
+            <th> Topping </th>
+            <th> Rating </th>
+            <th> Cost </th>
+            <th>Buy</th>
+        </tr>
+        <tr>
+            <td>Cheese</td>
+            <td>Yummy</td>
+            <td>0.50</td>
+            <th><button class="btn-minimal" onclick="buyextracheese()">Buy</button></th>
+        </tr>
+        <tr>
+            <td>Basil</td>
+            <td>Yummy</td>
+            <td>1.00</td>
+            <th><button class="btn-minimal" onclick="buyextraBasil()">Buy</button></th>
+        </tr>
+        <tr>
+            <td>Meat Balls</td>
+            <td>Good</td>
+            <td>2.00</td>
+            <th><button class="btn-minimal" onclick="buyMeatBalls()">Buy</button></th>
+        </tr>
+        <tr>
+            <td>Tomato Sauce</td>
+            <td>OK</td>
+            <td>3.50</td>
+            <th><button class="btn-minimal" onclick="buyTomatoSauce()">Buy</buttononclick="buyMeatBalls()"></th>
+        </tr>
+        <tr>
+            <td>Alfredo Sauce</td>
+            <td>Tasty</td>
+            <td>5.00</td>
+            <th><button class="btn-minimal" onclick="buyAlfredoSauce()">Buy</buttononclick="buyAlfredoSauce()"></th>
+        </tr>
+        <tr>
+            <td>Chefs Secret</td>
+            <td>Tasty</td>
+            <td>5.00</td>
+            <th><button class="btn-minimal" onclick="buyAlfredoSauce()">Buy</buttononclick="buyAlfredoSauce()"></th>
+        </tr>
+
+
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <center><button class="btn-minimal"><a href="deliver.html">Order your pasta</a></button></center>
+
+</body>
+
+
+
+</html>
