@@ -117,7 +117,6 @@
     <Content Include="index.html" />
     <Content Include="pasta.html" />
     <Content Include="pizza.html" />
-    <Content Include="scripts\pasta.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
