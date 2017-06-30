@@ -110,7 +110,6 @@
   <ItemGroup>
     <Content Include="css\Css.css" />
     <Content Include="deliver.html" />
-    <Content Include="delivered.html" />
     <Content Include="images\artsfon.com-39798.jpg" />
     <Content Include="images\italian-pasta-wallpaper-mobile.jpg" />
     <Content Include="images\Restrant.jpg" />
