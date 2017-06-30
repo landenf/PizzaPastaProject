@@ -121,7 +121,7 @@ function buyAlfredoSauce1() {
 }
 
 function addressf(address) {
-    alert("I totaly dont know your adddress is : " + address);
+    alert("Thank you for ordering with us! Your pizza/pasta will be deliverd to you at: " + address + "  It should be there soon!  Please be ready to pay when it gets there.");
     AdddressFinal = address;
 }
 function getaddress() {
