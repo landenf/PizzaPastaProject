@@ -115,11 +115,10 @@ function buyAlfredoSauce1() {
     }
 }
 function addressf(address) {
-    alert("Thank you for ordering with us! Your pizza/pasta will be deliverd to you at: " + address + "  It should be there soon!  Please be ready to pay when it gets there.");
+    alert("Thank you for ordering with us! Your pizza/pasta will be deliverd to you at: " + address + "  It should be there soon!  Please be ready to pay when it gets there. Thank you for doing buissness with Online Itailan Restrant.");
     AdddressFinal = address;
 }
 function getaddress() {
     var address = document.getElementById("namename")["value"];
     addressf(address);
 }
-//# sourceMappingURL=A1.js.map
