@@ -1,5 +1,9 @@
-﻿
-    [class*='btn-'] {
+﻿    body {
+        background-image: url('../Images/Restrant.jpg');
+    }
+    
+
+[class*='btn-'] {
 	border: none;
 	border-bottom: 2px solid rgba(0,0,0,.15);
 	border-top: 1px solid rgba(255,255,255,.15);
@@ -41,3 +45,57 @@
 			box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
 			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
 		}
+
+                .pizzaCrust {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 50px;
+            left: 10px;
+            z-index: 1;
+        }
+
+            .mozzarellaCheese {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            top: 100px;
+            left: 150px;
+            z-index: 2;
+        }
+             .pepperoni {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            top: 200px;
+            left: 200px;
+            z-index: 2;
+        }
+             .mushroom {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            top: 250px;
+            left: 150px;
+            z-index: 2;
+        }
+             .broccoli {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            top: 175px;
+            left: 65px;
+            z-index: 2;
+        }
+
+             .cheesebread {
+            position: absolute;
+            width: 200px;
+            height:250px;
+            top: 450px;
+            left: 10px;
+            z-index: 1;
+        }
+             .White{
+                 color:white;
+             }

@@ -75,4 +75,6 @@ function validateForm() {
         window.location.href = "index.html";
     }
 }
+//-----------------------------------------
+//Pizza pic display
 //# sourceMappingURL=A1.js.map

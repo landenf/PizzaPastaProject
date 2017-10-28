@@ -96,8 +96,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\broccoli.png" />
+    <Content Include="images\cheesebread.png" />
+    <Content Include="images\mozzarellaCheese.png" />
+    <Content Include="images\mushroom.png" />
     <Content Include="images\pasta.PNG" />
+    <Content Include="images\pepperoni.png" />
     <Content Include="images\pizza.PNG" />
+    <Content Include="images\PizzaCrust.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
