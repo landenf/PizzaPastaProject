@@ -15,27 +15,33 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-  <center>  <h1 style="color:white">Order information</h1>
-     <h4 style="color:white">Name</h4>
-  
-    <input type="text"name="name" />
-    <h4 style="color:white">Number</h4>
-    <input type="text" name="number" />
-    <h4 style="color:white">Address (Will not be saved)</h4>
-          <input type="text" name="address" id="namename" />
-      <form action=" " style="color:white">
-          <input type="radio" name="payment" value="cash"> Cash<br>
-          <input type="radio" name="payment" value="check"> Check<br>
-          <input type="radio" name="payment" value="card"> Card
-      </form>
+    <center>
 
-    <br />
-    <br />
-   <button class="btn-minimal" onclick="getaddress()"><a href="index.html">ORDER</a></button>
- 
+        <h1 style="color:white">Order information</h1>+
+
+        <form name="Form1" onsubmit="return">
+            <h4 style="color:white" id="1">Name</h4>
+            <input type="text" name="name" />
+            <h4 style="color:white">Number</h4>
+            <input type="text" name="number" />
+            <h4 style="color:white">Address (Will not be saved)</h4>
+            <input type="text" name="address" id="namename" />
+        </form>
+        <br /><br /><br />
+        <form action="" style="color:white" name="Form2">
+            <input type="radio" name="payment" value="cash"> Cash<br>
+            <input type="radio" name="payment" value="check"> Check<br>
+            <input type="radio" name="payment" value="card"> Card
+        </form>
+
+        <br />
+        <br />
+        <button class="btn-minimal" onclick="validateForm()"><a href="index.html">ORDER</a></button>
+    </center>
+
 </body>
 
-</center>
+
 
 
 </html>

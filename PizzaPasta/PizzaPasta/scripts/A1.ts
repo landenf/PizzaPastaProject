@@ -73,3 +73,19 @@ function getaddress() {
     var address = document.getElementById("namename")["value"];
     addressf(address);
 }
+
+function validateForm() {
+    var a = document.forms["Form1"]["name"].value;
+    var b = document.forms["Form1"]["number"].value;
+    var c = document.forms["Form1"]["address"].value;
+    if (a == null || a == "", b == null || b == "", c == null || c == "") {
+        alert("Please Fill All Required Field");
+        return false;
+    }
+    else {
+        getaddress();
+        window.location.href = "index.html";
+
+    }
+}
+    
