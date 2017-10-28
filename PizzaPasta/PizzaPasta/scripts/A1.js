@@ -62,3 +62,4 @@ function getaddress() {
     var address = document.getElementById("namename")["value"];
     addressf(address);
 }
+//# sourceMappingURL=A1.js.map
