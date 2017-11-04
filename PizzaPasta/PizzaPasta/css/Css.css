@@ -1,7 +1,24 @@
 ﻿    body {
-        background-image: url('../Images/Restrant.jpg');
+        background-image: url('../Images/artsfon.com-39798.jpg');
+        
     }
     
+table {
+        font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+}
+
+th, td {
+          border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 
 [class*='btn-'] {
 	border: none;
@@ -96,6 +113,10 @@
             left: 10px;
             z-index: 1;
         }
-             .White{
-                 color:white;
-             }
+.White {
+    color: white;
+}
+ 
+.pizzaBackground {
+    background-image: url('../Images/artsfon.com-39798.jpg');
+              }

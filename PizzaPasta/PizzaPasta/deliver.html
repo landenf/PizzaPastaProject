@@ -13,15 +13,18 @@
 	<meta charset="utf-8" />
 </head>
 <body>
+
     <h1 class="White">Your Order:</h1>
     <br />
-    <img class="pizzaCrust" id="PizzaTag1" src="images/PizzaCrust.jpg" />
-    <img class="mozzarellaCheese" id="PizzaTag2" src="images/mozzarellaCheese.png" />
-    <img  class="pepperoni" id="PizzaTag3" src="images/pepperoni.png" />
-    <img  class="broccoli" id="PizzaTag4" src="images/broccoli.png" />
-    <img  class="mushroom" id="PizzaTag5" src="images/mushroom.png" />
+    <img  style="display:normal;" class="pizzaCrust" id="pizzaCrust" src="images/PizzaCrust.jpg" />
+    <img  style="display:normal; "class="mozzarellaCheese" id="mozzarellaCheese" src="images/mozzarellaCheese.png" />
+    <img  style="display:normal;" class="pepperoni" id="pepperoni" src="images/pepperoni.png" />
+    <img  style="display:normal;" class="broccoli" id="broccoli" src="images/broccoli.png" />
+    <img  style="display:normal;" class="mushroom" id="mushroom" src="images/mushroom.png" />
     <br />
-    <img  class="cheesebread" id="PizzaTag6"src="images/cheesebread.png" />
+    <img  class="cheesebread" id="cheeseBread"src="images/cheesebread.png" />
+
+
 
     <center>
 
@@ -46,14 +49,17 @@
         <br />
         <button class="btn-minimal" onclick="validateForm()">Order</button>
     </center>
+    <br /><br /><br />
+    <!--<button style="z-index:3" onclick="hideIngredient()">click me</button>-->
 
 </body>
 
-<!-------------------------------------------------------------------------------------
-Pizza image display-->
+<script>
 
+    window.onload = function start() {
+        createPizza();
+    };
 
-
-
+</script>
 
 </html>

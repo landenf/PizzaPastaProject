@@ -1,5 +1,4 @@
-﻿//Typscript for this project:
-//Varibles------------------------
+﻿let pizzaIngredient = ['mozzarellaCheese', 'pepperoni', 'broccoli', 'mushroom','cheeseBread'];
 var Total = 0.00;
 var AdddressFinal = "";
 //functions----------------------
@@ -9,12 +8,23 @@ function buyMeatBalls() {
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
 
 }
+
 function buyextracheese() {
     // let someValue = 6;
         Total = Total + .5;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
 
 }
+
+function buyextracheese1() {
+    // let someValue = 6;
+    Total = Total + .5;
+    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+
+}
+
+
+
 function buyextraBasil() {
     // let someValue = 6;
         Total = Total + 1.00;
@@ -35,15 +45,9 @@ function buyAlfredoSauce() {
 
 }
 //.
-function buyMeatBalls1() {
+function buyPepperoni() {
     // let someValue = 6;
         Total = Total + 2;
-        document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-
-}
-function buyextracheese1() {
-    // let someValue = 6;
-        Total = Total + .5;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
 
 }
@@ -89,10 +93,24 @@ function validateForm() {
     }
 }
 
+var purchasedIngredient = true;
 
-//-----------------------------------------
-//Pizza pic display
+function createPizza() {
+    pizzaIngredient
+    let ingredient = '';
 
+    for (let i = 0; i <= pizzaIngredient.length; i++) {
+        ingredient = pizzaIngredient[i];
+        hideIngredient(ingredient);
+    }
+}
 
+function hideIngredient(ingredient) {
+    let image = document.getElementById(ingredient);
+    image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
+}
 
-    
+function showIngredient(ingredient) {
+    let image = document.getElementById(ingredient);
+    image.style.display = //(image.style.display == 'none') ? 'inline' : 'none'
+}

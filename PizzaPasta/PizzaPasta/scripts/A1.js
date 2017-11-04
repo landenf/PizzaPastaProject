@@ -1,5 +1,4 @@
-//Typscript for this project:
-//Varibles------------------------
+var pizzaIngredient = ['mozzarellaCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
 var Total = 0.00;
 var AdddressFinal = "";
 //functions----------------------
@@ -12,6 +11,11 @@ function buyextracheese() {
     // let someValue = 6;
     Total = Total + .5;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+}
+function buyextracheese1() {
+    // let someValue = 6;
+    Total = Total + .5;
+    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
 }
 function buyextraBasil() {
     // let someValue = 6;
@@ -29,14 +33,9 @@ function buyAlfredoSauce() {
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
 }
 //.
-function buyMeatBalls1() {
+function buyPepperoni() {
     // let someValue = 6;
     Total = Total + 2;
-    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-}
-function buyextracheese1() {
-    // let someValue = 6;
-    Total = Total + .5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
 }
 function buyextraSauce1() {
@@ -75,6 +74,21 @@ function validateForm() {
         window.location.href = "index.html";
     }
 }
-//-----------------------------------------
-//Pizza pic display
-//# sourceMappingURL=A1.js.map
+var purchasedIngredient = true;
+function createPizza() {
+    pizzaIngredient;
+    var ingredient = '';
+    for (var i = 0; i <= pizzaIngredient.length; i++) {
+        ingredient = pizzaIngredient[i];
+        hideIngredient(ingredient);
+    }
+}
+function hideIngredient(ingredient) {
+    var image = document.getElementById(ingredient);
+    image.style.display = (image.style.display == 'none') ? 'inline' : 'none';
+}
+function showIngredient(ingredient) {
+    var image = document.getElementById(ingredient);
+    image.style.display =
+    ; //(image.style.display == 'none') ? 'inline' : 'none'
+}
