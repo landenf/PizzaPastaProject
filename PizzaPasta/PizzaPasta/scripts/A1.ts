@@ -101,16 +101,13 @@ function createPizza() {
 
     for (let i = 0; i <= pizzaIngredient.length; i++) {
         ingredient = pizzaIngredient[i];
-        hideIngredient(ingredient);
+        IngredientContoller(ingredient);
     }
 }
 
-function hideIngredient(ingredient) {
+function IngredientContoller(ingredient) {
     let image = document.getElementById(ingredient);
     image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
 }
 
-function showIngredient(ingredient) {
-    let image = document.getElementById(ingredient);
-    image.style.display = //(image.style.display == 'none') ? 'inline' : 'none'
-}
+
