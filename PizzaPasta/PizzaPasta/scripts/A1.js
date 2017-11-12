@@ -1,57 +1,77 @@
 var pizzaIngredient = ['mozzarellaCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
+var varibles = ['boughtMeatBalls'];
 var Total = 0.00;
 var AdddressFinal = "";
+//let boughtMeatBalls    = false;
+//let boughtextraSauce1        = false;
+//let boughtextracheese  = false;
+//let boughtextracheese1 = false;
+//let boughtextraBasil   = false;
+//let boughtPepperoni    = false;
+//let boughtTomatoSauce  = false;
+//let boughtTomatoSauce1 = false;
+//let boughtAlfredoSauce = false;
+//let boughtAlfredoSauce1= false;
 //functions----------------------
 function buyMeatBalls() {
     // let someValue = 6;
     Total = Total + 2;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtMeatBalls = true;
 }
 function buyextracheese() {
     // let someValue = 6;
     Total = Total + .5;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtextracheese = true;
 }
 function buyextracheese1() {
     // let someValue = 6;
     Total = Total + .5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtextracheese1 = true;
 }
 function buyextraBasil() {
     // let someValue = 6;
     Total = Total + 1.00;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtextraBasil = true;
 }
 function buyTomatoSauce() {
     // let someValue = 6;
     Total = Total + 3.50;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtTomatoSauce = true;
 }
 function buyAlfredoSauce() {
     // let someValue = 6;
     Total = Total + 5;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtAlfredoSauce = true;
 }
-//.
 function buyPepperoni() {
     // let someValue = 6;
     Total = Total + 2;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtPepperoni = true;
 }
 function buyextraSauce1() {
     // let someValue = 6;
     Total = Total + 1.00;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtextraSauce1 = true;
 }
 function buyTomatoSauce1() {
     // let someValue = 6;
     Total = Total + 3.50;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtTomatoSauce1 = true;
 }
 function buyAlfredoSauce1() {
     // let someValue = 6;
     Total = Total + 5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    //boughtAlfredoSauce1 = true;
 }
 function addressf(address) {
     alert("Thank you for ordering with us! Your pizza/pasta will be deliverd to you at: " + address + "  It should be there soon!  Please be ready to pay when it gets there. Thank you for doing buissness with Online Itailan Restrant.");
@@ -78,6 +98,13 @@ var purchasedIngredient = true;
 function createPizza() {
     pizzaIngredient;
     var ingredient = '';
+    var TempVarible;
+    for (var i = 0; i <= varibles.length; i++) {
+        TempVarible = varibles[i];
+        if (TempVarible = true) {
+            IngredientContoller(TempVarible);
+        }
+    }
     for (var i = 0; i <= pizzaIngredient.length; i++) {
         ingredient = pizzaIngredient[i];
         IngredientContoller(ingredient);
