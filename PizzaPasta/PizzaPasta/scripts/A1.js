@@ -1,23 +1,12 @@
 var pizzaIngredient = ['mozzarellaCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
-var varibles = ['boughtMeatBalls'];
 var Total = 0.00;
 var AdddressFinal = "";
-//let boughtMeatBalls    = false;
-//let boughtextraSauce1        = false;
-//let boughtextracheese  = false;
-//let boughtextracheese1 = false;
-//let boughtextraBasil   = false;
-//let boughtPepperoni    = false;
-//let boughtTomatoSauce  = false;
-//let boughtTomatoSauce1 = false;
-//let boughtAlfredoSauce = false;
-//let boughtAlfredoSauce1= false;
 //functions----------------------
 function buyMeatBalls() {
     // let someValue = 6;
     Total = Total + 2;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-    //boughtMeatBalls = true;
+    localStorage.setItem("MeatBalls", "1");
 }
 function buyextracheese() {
     // let someValue = 6;
@@ -53,7 +42,7 @@ function buyPepperoni() {
     // let someValue = 6;
     Total = Total + 2;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-    //boughtPepperoni = true;
+    localStorage.setItem("pepperoni", "1");
 }
 function buyextraSauce1() {
     // let someValue = 6;
@@ -96,21 +85,25 @@ function validateForm() {
 }
 var purchasedIngredient = true;
 function createPizza() {
-    pizzaIngredient;
     var ingredient = '';
-    var TempVarible;
-    for (var i = 0; i <= varibles.length; i++) {
-        TempVarible = varibles[i];
-        if (TempVarible = true) {
-            IngredientContoller(TempVarible);
-        }
-    }
     for (var i = 0; i <= pizzaIngredient.length; i++) {
         ingredient = pizzaIngredient[i];
         IngredientContoller(ingredient);
     }
+    AddIngredients();
 }
 function IngredientContoller(ingredient) {
     var image = document.getElementById(ingredient);
     image.style.display = (image.style.display == 'none') ? 'inline' : 'none';
+}
+//-------------------------------------------------------------------------------------
+var pepperoni = localStorage.getItem("pepperoni");
+var Meatballs = localStorage.getItem("Meatballs");
+var varibles = [pepperoni, Meatballs];
+function AddIngredients() {
+    for (var i = 0; i <= varibles.length; i++) {
+        if (varibles[i] == "1") {
+            IngredientContoller('pepperoni');
+        }
+    }
 }

@@ -1,15 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
-<style>
-
-</style>
 
 <head>
     <link href="../scripts/Css.css" rel="stylesheet" type="text/css" />
     <link href="css/Css.css" rel="stylesheet" />
     <script src="scripts/A1.js"></script>
-
-    <title></title>
+    <script>window.onload = function start() {
+    createPizza();
+};</script>
+      <title></title>
 	<meta charset="utf-8" />
 </head>
 <body>
@@ -22,7 +21,7 @@
     <img  style="display:normal;" class="broccoli" id="broccoli" src="images/broccoli.png" />
     <img  style="display:normal;" class="mushroom" id="mushroom" src="images/mushroom.png" />
     <br />
-    <img  class="cheesebread" id="cheeseBread"src="images/cheesebread.png" />
+    <img  style="display:normal;" class="cheesebread" id="cheeseBread"src="images/cheesebread.png" />
 
 
 
@@ -50,16 +49,10 @@
         <button class="btn-minimal" onclick="validateForm()">Order</button>
     </center>
     <br /><br /><br />
-    <button style="z-index:3" onclick="showIngredient('pepperoni')">click me</button>
+    <button style="z-index:3" onclick="IngredientContoller('pepperoni')">click me</button>
 
 </body>
 
-<script>
 
-    window.onload = function start() {
-        createPizza();
-    };
-
-</script>
 
 </html>
