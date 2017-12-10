@@ -1,7 +1,11 @@
-var pizzaIngredient = ['mozzarellaCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
+var pizzaIngredient = ['ExtraCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
 var Total = 0.00;
 var AdddressFinal = "";
 //functions----------------------
+function setVaribles() {
+    localStorage.setItem("ExtraCheese", "0");
+    localStorage.setItem("pepperoni", "0");
+}
 function buyMeatBalls() {
     // let someValue = 6;
     Total = Total + 2;
@@ -18,7 +22,7 @@ function buyextracheese1() {
     // let someValue = 6;
     Total = Total + .5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-    //boughtextracheese1 = true;
+    localStorage.setItem("ExtraCheese", "1");
 }
 function buyextraBasil() {
     // let someValue = 6;
@@ -86,7 +90,7 @@ function validateForm() {
 var purchasedIngredient = true;
 function createPizza() {
     var ingredient = '';
-    for (var i = 0; i <= pizzaIngredient.length; i++) {
+    for (var i = 0; i < pizzaIngredient.length; i++) {
         ingredient = pizzaIngredient[i];
         IngredientContoller(ingredient);
     }
@@ -99,11 +103,13 @@ function IngredientContoller(ingredient) {
 //-------------------------------------------------------------------------------------
 var pepperoni = localStorage.getItem("pepperoni");
 var Meatballs = localStorage.getItem("Meatballs");
-var varibles = [pepperoni, Meatballs];
+var ExtraCheese = localStorage.getItem("ExtraCheese");
+var varibles = [pepperoni, ExtraCheese];
+var varibleTexs = ["pepperoni", "ExtraCheese"];
 function AddIngredients() {
-    for (var i = 0; i <= varibles.length; i++) {
+    for (var i = 0; i < varibles.length; i++) {
         if (varibles[i] == "1") {
-            IngredientContoller('pepperoni');
+            IngredientContoller(varibleTexs[i]);
         }
     }
 }
