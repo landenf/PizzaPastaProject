@@ -5,6 +5,9 @@ var AdddressFinal = "";
 function setVaribles() {
     localStorage.setItem("ExtraCheese", "0");
     localStorage.setItem("pepperoni", "0");
+    localStorage.setItem("broccoli", "0");
+    localStorage.setItem("mushroom", "0");
+    localStorage.setItem("cheeseBread", "0");
 }
 function buyMeatBalls() {
     // let someValue = 6;
@@ -58,13 +61,19 @@ function buyTomatoSauce1() {
     // let someValue = 6;
     Total = Total + 3.50;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-    //boughtTomatoSauce1 = true;
+    localStorage.setItem("mushroom", "1");
 }
 function buyAlfredoSauce1() {
     // let someValue = 6;
     Total = Total + 5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-    //boughtAlfredoSauce1 = true;
+    localStorage.setItem("broccoli", "1");
+}
+function buyCheeseBread() {
+    // let someValue = 6;
+    Total = Total + 5;
+    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("cheeseBread", "1");
 }
 function addressf(address) {
     alert("Thank you for ordering with us! Your pizza/pasta will be deliverd to you at: " + address + "  It should be there soon!  Please be ready to pay when it gets there. Thank you for doing buissness with Online Itailan Restrant.");
@@ -104,8 +113,11 @@ function IngredientContoller(ingredient) {
 var pepperoni = localStorage.getItem("pepperoni");
 var Meatballs = localStorage.getItem("Meatballs");
 var ExtraCheese = localStorage.getItem("ExtraCheese");
-var varibles = [pepperoni, ExtraCheese];
-var varibleTexs = ["pepperoni", "ExtraCheese"];
+var broccoli = localStorage.getItem("broccoli");
+var mushroom = localStorage.getItem("mushroom");
+var cheeseBread = localStorage.getItem("cheeseBread");
+var varibles = [pepperoni, ExtraCheese, broccoli, mushroom, cheeseBread];
+var varibleTexs = ["pepperoni", "ExtraCheese", "broccoli", "mushroom", "cheeseBread"];
 function AddIngredients() {
     for (var i = 0; i < varibles.length; i++) {
         if (varibles[i] == "1") {
@@ -113,3 +125,4 @@ function AddIngredients() {
         }
     }
 }
+//# sourceMappingURL=A1.js.map

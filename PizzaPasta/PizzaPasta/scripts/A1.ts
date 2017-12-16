@@ -8,6 +8,9 @@ var AdddressFinal = "";
 function setVaribles() {
     localStorage.setItem("ExtraCheese", "0");
     localStorage.setItem("pepperoni", "0");
+    localStorage.setItem("broccoli", "0");
+    localStorage.setItem("mushroom", "0");
+    localStorage.setItem("cheeseBread","0");
 
 }
 
@@ -66,13 +69,21 @@ function buyTomatoSauce1() {
     // let someValue = 6;
         Total = Total + 3.50;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtTomatoSauce1 = true;
+        localStorage.setItem("mushroom", "1");
 }
 function buyAlfredoSauce1() {
     // let someValue = 6;
         Total = Total + 5;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtAlfredoSauce1 = true;
+        localStorage.setItem("broccoli","1");
+
+}
+function buyCheeseBread() {
+    // let someValue = 6;
+    Total = Total + 5;
+    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("cheeseBread", "1");
+
 }
 
 function addressf(address) {
@@ -121,9 +132,15 @@ function IngredientContoller(ingredient) {
 let pepperoni = localStorage.getItem("pepperoni");
 let Meatballs = localStorage.getItem("Meatballs");
 let ExtraCheese = localStorage.getItem("ExtraCheese");
+let broccoli = localStorage.getItem("broccoli");
+let mushroom = localStorage.getItem("mushroom");
+let cheeseBread = localStorage.getItem("cheeseBread");
 
-let varibles = [pepperoni, ExtraCheese];
-let varibleTexs = ["pepperoni","ExtraCheese"];
+
+
+
+let varibles = [pepperoni, ExtraCheese, broccoli, mushroom, cheeseBread];
+let varibleTexs = ["pepperoni", "ExtraCheese", "broccoli", "mushroom","cheeseBread"];
 
 
 
