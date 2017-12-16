@@ -3,8 +3,6 @@
 let pizzaIngredient = ['ExtraCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
 var Total = 0.00;
 var AdddressFinal = "";
-
-//functions----------------------
 function setVaribles() {
     localStorage.setItem("ExtraCheese", "0");
     localStorage.setItem("pepperoni", "0");
@@ -124,11 +122,6 @@ function IngredientContoller(ingredient) {
     image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
 }
 
-<<<<<<< HEAD
-
-
-//-------------------------------------------------------------------------------------
-
 
 let pepperoni = localStorage.getItem("pepperoni");
 let Meatballs = localStorage.getItem("Meatballs");
@@ -152,9 +145,10 @@ function AddIngredients() {
             IngredientContoller(varibleTexs[i]);
         }
     }
-=======
-function showIngredient(ingredient) {
-    let image = document.getElementById(ingredient);
-    image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
->>>>>>> Development
+
+    function showIngredient(ingredient) {
+        let image = document.getElementById(ingredient);
+        image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
+
+    }
 }
