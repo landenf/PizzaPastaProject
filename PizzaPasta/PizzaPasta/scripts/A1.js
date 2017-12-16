@@ -89,6 +89,5 @@ function hideIngredient(ingredient) {
 }
 function showIngredient(ingredient) {
     var image = document.getElementById(ingredient);
-    image.style.display =
-    ; //(image.style.display == 'none') ? 'inline' : 'none'
+    image.style.display = (image.style.display == 'none') ? 'inline' : 'none';
 }

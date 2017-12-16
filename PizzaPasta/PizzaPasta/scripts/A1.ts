@@ -112,5 +112,5 @@ function hideIngredient(ingredient) {
 
 function showIngredient(ingredient) {
     let image = document.getElementById(ingredient);
-    image.style.display = //(image.style.display == 'none') ? 'inline' : 'none'
+    image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
 }
