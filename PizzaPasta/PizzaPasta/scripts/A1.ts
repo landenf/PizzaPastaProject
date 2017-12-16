@@ -1,7 +1,7 @@
 ﻿
 
 let pizzaIngredient = ['ExtraCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
-var Total = 0.00;
+var Total = 5.00; //Starts a 5 for thw cost of pizza
 var AdddressFinal = "";
 function setVaribles() {
     localStorage.setItem("ExtraCheese", "0");
@@ -153,4 +153,8 @@ function AddIngredients() {
         image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
 
     }
+}
+function TotalAmount() {
+    document.getElementById("TotalDisplay").innerHTML = "$" + Total.toString();
+
 }
