@@ -124,6 +124,7 @@ function IngredientContoller(ingredient) {
     image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
 }
 
+<<<<<<< HEAD
 
 
 //-------------------------------------------------------------------------------------
@@ -151,4 +152,9 @@ function AddIngredients() {
             IngredientContoller(varibleTexs[i]);
         }
     }
+=======
+function showIngredient(ingredient) {
+    let image = document.getElementById(ingredient);
+    image.style.display = (image.style.display == 'none') ? 'inline' : 'none'
+>>>>>>> Development
 }
