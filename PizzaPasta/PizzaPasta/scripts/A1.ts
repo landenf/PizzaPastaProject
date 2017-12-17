@@ -1,14 +1,15 @@
 ﻿
 
 let pizzaIngredient = ['ExtraCheese', 'pepperoni', 'broccoli', 'mushroom', 'cheeseBread'];
-var Total = 5.00; //Starts a 5 for thw cost of pizza
+var Total = 5.00; //Starts a 5 for thw cost of pizza.
 var AdddressFinal = "";
 function setVaribles() {
     localStorage.setItem("ExtraCheese", "0");
     localStorage.setItem("pepperoni", "0");
     localStorage.setItem("broccoli", "0");
     localStorage.setItem("mushroom", "0");
-    localStorage.setItem("cheeseBread","0");
+    localStorage.setItem("cheeseBread", "0");
+    localStorage.setItem("Total", Total.toString());
 
 }
 
@@ -17,63 +18,69 @@ function buyMeatBalls() {
         Total = Total + 2;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
         localStorage.setItem("MeatBalls", "1");
+        localStorage.setItem("Total", Total.toString());
 
 }
 function buyextracheese() {
     // let someValue = 6;
         Total = Total + .5;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtextracheese = true;
+        localStorage.setItem("Total", Total.toString());
 }
 function buyextracheese1() {
     // let someValue = 6;
     Total = Total + .5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
     localStorage.setItem("ExtraCheese", "1");
+    localStorage.setItem("Total", Total.toString());
 
 }
 function buyextraBasil() {
     // let someValue = 6;
         Total = Total + 1.00;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtextraBasil = true;
+        localStorage.setItem("Total", Total.toString());
     }
 function buyTomatoSauce() {
     // let someValue = 6;
         Total = Total + 3.50;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtTomatoSauce = true;
+        localStorage.setItem("Total", Total.toString());
 }
 function buyAlfredoSauce() {
     // let someValue = 6;
         Total = Total + 5;
         document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtAlfredoSauce = true;
+        localStorage.setItem("Total", Total.toString());
 }
 function buyPepperoni() {
     // let someValue = 6;
         Total = Total + 2;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
         localStorage.setItem("pepperoni", "1");
+        localStorage.setItem("Total", Total.toString());
 
 }
 function buyextraSauce1() {
     // let someValue = 6;
         Total = Total + 1.00;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-        //boughtextraSauce1 = true;
+        localStorage.setItem("Total", Total.toString());
 }
 function buyTomatoSauce1() {
     // let someValue = 6;
         Total = Total + 3.50;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
         localStorage.setItem("mushroom", "1");
+        localStorage.setItem("Total", Total.toString());
+
 }
 function buyAlfredoSauce1() {
     // let someValue = 6;
         Total = Total + 5;
         document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
         localStorage.setItem("broccoli","1");
+        localStorage.setItem("Total", Total.toString());
 
 }
 function buyCheeseBread() {
@@ -81,6 +88,7 @@ function buyCheeseBread() {
     Total = Total + 5;
     document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
     localStorage.setItem("cheeseBread", "1");
+    localStorage.setItem("Total", Total.toString());
 
 }
 
@@ -155,6 +163,6 @@ function AddIngredients() {
     }
 }
 function TotalAmount() {
-    document.getElementById("TotalDisplay").innerHTML = "$" + Total.toString();
+    document.getElementById("TotalDisplay").innerHTML = '$' + localStorage.getItem("Total")
 
 }
