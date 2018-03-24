@@ -19,6 +19,14 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+.button {
+    color: grey !important;
+    border: black !important;
+    color: white !important;
+    padding: 15px 32px;
+    text-align: center;
+}
+
 
 [class*='btn-'] {
 	border: none;
@@ -120,3 +128,23 @@ tr:nth-child(even) {
 .pizzaBackground {
     background-image: url('../Images/artsfon.com-39798.jpg');
               }
+.buttonPizza {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: auto;
+}
+
+.buttonPasta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -6,33 +6,62 @@
     <link href="css/Css.css" rel="stylesheet" />
     <title></title>
 	<meta charset="utf-8" />
-    <style>
-        body {
-            background-image: url('../Images/Restrant.jpg');
-        }
 
-    </style>
+        <style>
+            body {
+                background-image: url('../Images/Restrant.jpg');
+            }
+
+            header {
+                color: white;
+                background-color:black;
+                padding:30px;
+                text-align:center;
+                width:auto;
+
+            }
+
+            /*buttonPasta {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }*/
+
+            /*buttonPizza {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }*/
+        </style>
+    
 </head>
 
-<body><center>
+<body>
+   
+<header>
+ 
     <h1 style="color:white" style="font-size:large">Itailan Restaurant!</h1>
     <h2 style="color:white">Order your own pizza or pasta!</h2>
     <p style="color:white">If you have any questions about us or how to order please give us a call at (123)-456-7899.</p>
+</header>
     <br /><br /><br />
-          <button class="btn-minimal"><a href="pasta.html">I want pasta!</a></button>
-          <button class="btn-minimal"><a href="pizza.html">I want pizza!</a></button>
+   <div class="buttonPasta">
+    <button class="btn-minimal"><a href="pasta.html">I want pasta!</a></button>
+       </div>
+    <div class="buttonPizza">
+      <button class="btn-minimal"><a href="pizza.html">I want pizza!</a></button>
+    </div>
+    <br />
 
-<br />   
- 
-
-          <iframe src="menu.html" height="400" width="400" style="background-color:grey"></iframe>
-
+    <div class="menu">
+    <iframe src="menu.html" height="400" width="400" style="background-color:grey"></iframe>
+</div>
 
     <br /><br />
-          <br />
-          <br />
-          <br />
-          <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
 
 </center>
