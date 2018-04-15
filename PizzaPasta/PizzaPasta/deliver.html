@@ -3,13 +3,12 @@
 
 <head>
     <link href="css/Css.css" rel="stylesheet" />
-    <script src="scripts/A1.js"></script>
-    <script>window.onload = function start() {
-    createPizza();
-    TotalAmount();
-};</script>
-      <title></title>
-	<meta charset="utf-8" />
+    <script src="scripts/pizza.js"></script>
+    <script src="scripts/pasta.js"></script>
+    <script src="scripts/delivery.js"></script>
+
+    <title></title>
+    <meta charset="utf-8" />
 </head>
 <body>
 
@@ -30,16 +29,15 @@
     <img style="display:normal;" class="mushroom" id="mushroom" src="images/Secrete.png" />
     <img style="display:normal;" class="mushroom" id="mushroom" src="images/TomatoSause.jpg" />
 
-
-
+<!--All good below.--> 
 
     <center>
 
         <h1 style="color:white">Order information</h1>
-        <h3 style="color: white">Your Total Is</h3><h3 style="color: white" id="TotalDisplay"></h3>
+        <h3 style="color: white">Your Total Is</h3><h3 style="color: white" id="TotalDisplay"></h3> 
         <form name="Form1" onsubmit="return">
             <h4 style="color:white" id="1">Name</h4>
-            <input type="text" name="name" />
+           <br /> <br /><input type="text" name="name" />
             <h4 style="color:white">Number</h4>
             <input type="text" name="number" />
             <h4 style="color:white">Address (Will not be saved)</h4>

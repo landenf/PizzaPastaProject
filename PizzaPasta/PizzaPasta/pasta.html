@@ -4,12 +4,9 @@
 <head>
     <link href="../scripts/Css.css" rel="stylesheet" type="text/css" />
     <link href="css/Css.css" rel="stylesheet" />
-    <script>
-window.onload = function start() {
-    setVaribles();
-};</script>
+    <script src="scripts/pasta.js"></script>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <style>
         table {
             font-family: arial, sans-serif;
@@ -26,6 +23,7 @@ window.onload = function start() {
         tr:nth-child(even) {
             background-color: #dddddd;
         }
+
         body {
             background-image: url('../Images/italian-pasta-wallpaper-mobile.jpg');
         }
@@ -35,7 +33,7 @@ window.onload = function start() {
 </head>
 <body>
 
-    <center>  <p>A Pizza Costs $5.00<br />Now add toppings!</p></center>
+    <center>  <p>A Pasta Costs $5.00<br />Now add toppings!</p></center>
     <center><h3 id="MoneyLeft"></h3></center>
 
     <table>
@@ -49,37 +47,37 @@ window.onload = function start() {
             <td>Cheese</td>
             <td>Yummy</td>
             <td>0.50</td>
-            <th><button class="btn-minimal" onclick="buyextracheese()">Buy</button></th>
+            <th><button class="btn-minimal" onclick="Cheese()">Buy</button></th>
         </tr>
         <tr>
             <td>Basil</td>
             <td>Yummy</td>
             <td>1.00</td>
-            <th><button class="btn-minimal" onclick="buyextraBasil()">Buy</button></th>
+            <th><button class="btn-minimal" onclick="Basil()">Buy</button></th>
         </tr>
         <tr>
             <td>Meat Balls</td>
             <td>Good</td>
             <td>2.00</td>
-            <th><button class="btn-minimal" onclick="buyMeatBalls()">Buy</button></th>
+            <th><button class="btn-minimal" onclick="MeatBalls()">Buy</button></th>
         </tr>
         <tr>
             <td>Tomato Sauce</td>
             <td>OK</td>
             <td>3.50</td>
-            <th><button class="btn-minimal" onclick="buyTomatoSauce()">Buy</buttononclick="buyMeatBalls()"></th>
+            <th><button class="btn-minimal" onclick="TomatoSauce()">Buy</button></th>
         </tr>
         <tr>
             <td>Alfredo Sauce</td>
             <td>Tasty</td>
             <td>5.00</td>
-            <th><button class="btn-minimal" onclick="buyAlfredoSauce()">Buy</buttononclick="buyAlfredoSauce()"></th>
+            <th><button class="btn-minimal" onclick="AlfredoSauce()">Buy</button></th>
         </tr>
         <tr>
             <td>Chefs Secret</td>
             <td>Tasty</td>
             <td>5.00</td>
-            <th><button class="btn-minimal" onclick="buyAlfredoSauce()">Buy</buttononclick="buyAlfredoSauce()"></th>
+            <th><button class="btn-minimal" onclick="ChefsSecret()">Buy</button></th>
         </tr>
 
 

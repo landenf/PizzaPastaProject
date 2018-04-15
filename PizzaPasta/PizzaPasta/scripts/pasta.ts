@@ -1,12 +1,17 @@
-﻿let pastaIngredient = ['PastaCheese', 'PastaBasil',' PastaMeatBalls', 'PastaAlfredoSause', 'PastaTomatoSause', 'PastaChefsSecret' ];
+﻿let pastaIngredient = ['PastaCheese', 'PastaBasil',' PastaMeatBalls', 'PastaAlfredoSauce', 'PastaTomatoSauce', 'PastaChefsSecret' ];
 var Total = 5.00; //Starts a 5 for the cost of pizza and pasta.
 var AdddressFinal = "";
-function PastasetVaribles() {
+
+window.onload = function start() {
+    setVariblesPasta();
+};
+
+function setVariblesPasta() {
     localStorage.setItem("PastaCheese", "0");
     localStorage.setItem("PastaBasil", "0");
     localStorage.setItem("PastaMeatBalls", "0");
-    localStorage.setItem("PastaAlfredoSause", "0");
-    localStorage.setItem("PastaTomatoSause", "0");
+    localStorage.setItem("PastaAlfredoSauce", "0");
+    localStorage.setItem("PastaTomatoSauce", "0");
     localStorage.setItem("PastaChefsSecret", "0");
 
     localStorage.setItem("Total", Total.toString());
@@ -15,36 +20,49 @@ function PastasetVaribles() {
 
 function Cheese() {
     // let someValue = 6;
+    Total = Total + .5;
+    document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("PastaCheese", "1");
+    localStorage.setItem("Total", Total.toString());
+
+}
+function MeatBalls() {
     Total = Total + 2;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
-    localStorage.setItem("MeatBalls", "1");
+    localStorage.setItem("PastaMeatBalls", "1");
     localStorage.setItem("Total", Total.toString());
+
+
+
 
 }
 function Basil() {
     // let someValue = 6;
-    Total = Total + .5;
+    Total = Total + 1;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("PastaBasil", "1");
     localStorage.setItem("Total", Total.toString());
 }//for pasta 
-function AlfredoSause() {
+function AlfredoSauce() {
     // let someValue = 6;
-    Total = Total + .5;
-    document.getElementById("MoneyLeft1").innerHTML = "$" + Total.toString() + " Money Spent";
-    localStorage.setItem("ExtraCheese", "1");
+    Total = Total + 5;
+    document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("PastaAlfredoSauce", "1");
     localStorage.setItem("Total", Total.toString());
 
-}// for pizza
-function TomatoSause() {
+}// for pasta
+function TomatoSauce() {
     // let someValue = 6;
-    Total = Total + 1.00;
+    Total = Total + 3.5;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("PastaTomatoSauce", "1");
     localStorage.setItem("Total", Total.toString());
 }
-function ChefsSecrect() {
+function ChefsSecret() {
     // let someValue = 6;
-    Total = Total + 3.50;
+    Total = Total + 5;
     document.getElementById("MoneyLeft").innerHTML = "$" + Total.toString() + " Money Spent";
+    localStorage.setItem("PastaChefsSecret", "1");
     localStorage.setItem("Total", Total.toString());
 }
 
@@ -78,23 +96,23 @@ function PastaIngredientContoller(ingredient) {
 let PastaCheese =localStorage.getItem("PastaCheese");
 let PastaBasil = localStorage.getItem("PastaBasil");
 let PastaMeatBalls = localStorage.getItem("PastaMeatBalls");
-let PastaAlfredoSause = localStorage.getItem("PastaAlfredoSause");
-let PastaTomatoSause = localStorage.getItem("PastaTomatoSause");
+let PastaAlfredoSauce = localStorage.getItem("PastaAlfredoSauce");
+let PastaTomatoSauce = localStorage.getItem("PastaTomatoSauce");
 let PastaChefsSecret = localStorage.getItem("PastaChefsSecret");
 
 
 
 
-let Pastavaribles = [PastaCheese, PastaBasil, PastaMeatBalls, PastaAlfredoSause, PastaTomatoSause, PastaChefsSecret];
-let PastavaribleTexs = ["PastaCheese", "PastaBasil", "PastaMeatBalls", "PastaAlfredoSause", "PastaTomatoSause", "PastaChefsSecret"];
+let Pastavariables = [PastaCheese, PastaBasil, PastaMeatBalls, PastaAlfredoSauce, PastaTomatoSauce, PastaChefsSecret];
+
 
 
 
 function PastaAddIngredients() {
 
-    for (let i = 0; i < Pastavaribles.length; i++) {
-        if (Pastavaribles[i] == "1") {
-            PastaIngredientContoller(PastavaribleTexs[i]);
+    for (let i = 0; i < Pastavariables.length; i++) {
+        if (Pastavariables[i] == "1") {
+            PastaIngredientContoller(Pastavariables[i]);
         }
     }
 
